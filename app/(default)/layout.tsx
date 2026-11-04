@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
-import FloatingContact from "@/components/ui/floating-contact";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import FloatingContact from "@/components/layout/floating-contact";
 
 export default function DefaultLayout({
   children,
@@ -22,7 +22,7 @@ export default function DefaultLayout({
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#FAF5EF] text-[#1C1F33]">
+    <div className="flex min-h-screen flex-col bg-[#F5F5F7] text-[#1D1D1F]">
       <Header />
       <main className="grow">{children}</main>
       <Footer />

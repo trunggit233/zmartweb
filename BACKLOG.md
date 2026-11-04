@@ -1,7 +1,26 @@
+# Backlog & Nhiệm vụ
+
+## Đã hoàn thành
+- [x] Khởi tạo dự án Next.js 16 + React 19 + TypeScript.
+- [x] Cấu hình Tailwind CSS v4 (`postcss.config.mjs`, `style.css`).
+- [x] Cấu hình TypeScript path alias `@/*` (`tsconfig.json`).
+- [x] Tái cấu trúc thư mục đa trang (Multi-page Architecture):
+  - Phân tách `components/layout/` (`header`, `footer`, `floating-contact`).
+  - Phân tách `components/ui/` (`logo`, `accordion`).
+  - Phân tách `components/pages/home/` (`hero-section`).
+  - Thiết lập quản lý dữ liệu tập trung `config/` (`site.ts`, `navigation.ts`).
+  - Thiết lập `types/` và `lib/utils.ts`.
+  - Khởi tạo khung các route đa trang: `/`, `/about`, `/services`, `/contact`, `/signin`, `/api/booking`.
+- [x] Kiểm tra TypeCheck (`tsc --noEmit`) đạt 100% không lỗi.
+
+## Kế hoạch tiếp theo
+- [ ] Dựng UI chi tiết cho các section trang chủ (Services, Why Us, Gallery, FAQ, Booking).
+- [ ] Dựng nội dung trang Giới thiệu (/about), Dịch vụ (/services), Liên hệ (/contact).
+- [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
+
 # Chuẩn bị cho phiên tiếp theo
  - Bắt đầu dựng Ui 
  - Sắp sếp bố cục hợp lý
  - Xác định số trang cần làm
  - Tái cấu trúc thư mục vì đây sẽ là website nhiều trang
  - Sử dụng AI nhưng có kiểm soát code và sạch sẽ tránh comment thừa
- 

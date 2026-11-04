@@ -1,5 +1,6 @@
 import "./css/style.css";
 import { Inter } from "next/font/google";
+import { siteConfig } from "@/config/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,14 +9,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "",
-  description: "",
-  openGraph: {
-    title: "",
-    description: "",
-    images: [""],
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
   },
-  metadataBase: new URL('https://domain.com')
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
 };
 
 export default function RootLayout({
@@ -25,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi" className="scroll-smooth">
-      <body className={`${inter.variable} bg-[#FAF5EF] font-inter text-[#1C1F33] antialiased`}>
+      <body className={`${inter.variable} bg-[#F5F5F7] font-inter text-[#1D1D1F] antialiased`}>
         <div className="flex min-h-screen flex-col overflow-x-clip">
           {children}
         </div>
