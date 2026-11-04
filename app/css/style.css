@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms" {
+  strategy: base;
+}
+
+/* 1. Khai báo biến theme và font */
+@theme {
+  --font-inter: Inter, sans-serif;
+
+  /* Các hoạt ảnh custom */
+  --animate-breath: breath 8s ease-in-out infinite both;
+  --animate-float: float 4s ease-in-out infinite both;
+  --animate-marquee-left: marquee-left 35s linear infinite;
+
+  --animate-marquee-right: marquee-right 35s linear infinite;
+
+  @keyframes breath {
+    0%,
+    100% {
+      transform: scale(0.95);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  @keyframes marquee-left {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-right {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+
+/* Pause marquee animation on hover */
+.pause-on-hover:hover,
+.group:hover .group-pause {
+  animation-play-state: paused;
+}
+
+/* ============================================================
+   4. SMOOTH SCROLL & SCROLL REVEAL
+   ============================================================ */
+
+/* 4.1 Tôn trọng cài đặt hệ điều hành: nếu người dùng bật
+   "giảm chuyển động" thì tắt hết animation/transition. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 4.2 Header đang sticky (cao ~64px). Khi bấm anchor #service,
+   browser cuộn tới sát mép trên => tiêu đề bị header che mất.
+   scroll-margin-top "đẩy" điểm dừng xuống dưới header. */
+@layer base {
+  :root {
+    --header-height: 4rem;
+  }
+
+  section[id] {
+    scroll-margin-top: calc(var(--header-height) + 0.5rem);
+  }
+}
+
+/* 4.3 Trạng thái "ẩn" ban đầu của phần tử chờ reveal.
+   Chỉ dùng khi JS đã bật (html.js-reveal) -> tránh trường hợp
+   JS lỗi/không chạy mà nội dung bị ẩn vĩnh viễn. */
+.js-reveal [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+/* 4.4 Trạng thái "hiện" khi phần tử vào viewport */
+.js-reveal [data-reveal].is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+/* 2. Các class tiện ích tái sử dụng: Buttons */
+.btn,
+.btn-sm {
+  @apply inline-flex items-center justify-center rounded-lg text-sm font-medium whitespace-nowrap transition-all;
+}
+
+.btn {
+  @apply px-4 py-[11px] shadow-sm;
+}
+
+.btn-sm {
+  @apply px-3 py-[6px] shadow-xs;
+}
+
+/* 3. Style cơ bản cho Form Inputs */
+.form-input,
+.form-textarea,
+.form-select {
+  @apply border border-gray-200 bg-white text-sm py-2.5 px-4 rounded-lg shadow-xs focus:border-blue-500 focus:ring-0;
+}
