@@ -15,10 +15,8 @@
 
 ## Kế hoạch tiếp theo
 - [X] Sửa lại css Brand trust.
-- [ ] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
-
-
-- [ ] Dựng UI chi tiết cho các section trang chủ (Services, Why Us, Gallery, FAQ, Booking).
-- [ ] Dựng nội dung trang Giới thiệu (/about), Dịch vụ (/services), Liên hệ (/contact).
+- [X] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
+- [X] Dựng UI chi tiết cho các section trang chủ.
+- [ ] Dựng trang contact, bóc tách cấu trúc, from gọn gàng.
 - [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
 
