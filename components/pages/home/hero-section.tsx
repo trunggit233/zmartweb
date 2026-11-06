@@ -1,42 +1,67 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-32">
-      <div className="container mx-auto max-w-7xl px-4 text-center sm:px-6">
-        <h1
-          data-aos="fade-up"
-          className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
-        >
-          Giải pháp công nghệ hiện đại cho doanh nghiệp của bạn
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="100"
-          className="mx-auto mt-6 max-w-2xl text-lg text-gray-600"
-        >
-          Xây dựng trải nghiệm trực tuyến ấn tượng, tối ưu hiệu suất và thúc đẩy tăng trưởng vượt bậc.
-        </p>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="mt-8 flex justify-center gap-4"
-        >
-          <Link
-            href="/services"
-            className="rounded-full bg-[#1D1D1F] px-6 py-3 font-medium text-white transition hover:bg-black"
-          >
-            Khám phá dịch vụ
-          </Link>
-          <Link
-            href="/contact"
-            className="rounded-full border border-gray-200 bg-white px-6 py-3 font-medium text-[#1D1D1F] shadow-xs transition hover:bg-gray-50"
-          >
-            Tư vấn miễn phí
-          </Link>
+    <section className="relative overflow-hidden py-16 md:py-10 lg:py-20">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div data-aos="fade-right">
+            
+            <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-[#1D1D1F] sm:text-5xl lg:text-6xl">
+              Giải pháp công nghệ hiện đại cho doanh nghiệp
+            </h1>
+
+            <p className="mt-5 text-base text-gray-600 sm:text-lg">
+              Xây dựng trải nghiệm trực tuyến ấn tượng, tối ưu hiệu suất và thúc đẩy tăng trưởng doanh số với nền tảng hiện đại nhất.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/services"
+                className="rounded-sm bg-[#1D1D1F] px-6 py-3 font-medium text-white transition hover:-translate-y-0.5 hover:bg-black "
+              >
+                Khám phá dịch vụ
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-sm border border-gray-200 bg-white px-6 py-3 font-medium text-[#1D1D1F] shadow-xs transition hover:-translate-y-0.5 hover:bg-gray-50"
+              >
+                Tư vấn miễn phí
+              </Link>
+            </div>
+
+            <div className="mt-10 flex items-center gap-8 border-t border-gray-200/60 pt-6">
+              <div>
+                <p className="text-2xl font-bold text-[#1D1D1F]">Uy tín</p>
+                <p className="text-xs text-gray-500">Dự án hoàn thành</p>
+              </div>
+              <div className="h-8 w-px bg-gray-200" />
+              <div>
+                <p className="text-2xl font-bold text-[#1D1D1F]">Nhiệt tình</p>
+                <p className="text-xs text-gray-500">Khách hàng hài lòng</p>
+              </div>
+              <div className="h-8 w-px bg-gray-200" />
+              <div>
+                <p className="text-2xl font-bold text-[#1D1D1F]">Chu đáo</p>
+                <p className="text-xs text-gray-500">Hỗ trợ kỹ thuật</p>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" className="relative flex items-center justify-center">
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-gray-300/40 via-gray-200/30 to-transparent blur-3xl -z-10" />
+            <Image
+              src="/images/bg-tk-web.png"
+              alt="Thiết kế website doanh nghiệp"
+              width={736}
+              height={1288}
+              priority
+              className="relative z-10 h-auto max-h-[520px] w-auto object-contain drop-shadow-2xl transition-transform duration-300 lg:max-h-[620px]"
+            />
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

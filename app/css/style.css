@@ -129,3 +129,12 @@
 .form-select {
   @apply border border-gray-200 bg-white text-sm py-2.5 px-4 rounded-lg shadow-xs focus:border-blue-500 focus:ring-0;
 }
+
+/* Hide scrollbar for Chrome, Safari, Edge, Firefox */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

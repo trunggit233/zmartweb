@@ -14,13 +14,11 @@
 - [x] Kiểm tra TypeCheck (`tsc --noEmit`) đạt 100% không lỗi.
 
 ## Kế hoạch tiếp theo
+- [X] Sửa lại css Brand trust.
+- [ ] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
+
+
 - [ ] Dựng UI chi tiết cho các section trang chủ (Services, Why Us, Gallery, FAQ, Booking).
 - [ ] Dựng nội dung trang Giới thiệu (/about), Dịch vụ (/services), Liên hệ (/contact).
 - [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
 
-# Chuẩn bị cho phiên tiếp theo
- - Bắt đầu dựng Ui 
- - Sắp sếp bố cục hợp lý
- - Xác định số trang cần làm
- - Tái cấu trúc thư mục vì đây sẽ là website nhiều trang
- - Sử dụng AI nhưng có kiểm soát code và sạch sẽ tránh comment thừa

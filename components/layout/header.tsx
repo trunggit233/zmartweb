@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="rounded-full bg-[#1D1D1F] px-4 py-2 text-sm font-medium text-white transition hover:bg-black"
+            className="rounded-sm bg-[#1D1D1F] px-4 py-2 text-sm font-medium text-white transition hover:bg-black hover:scale-101"
           >
             Liên hệ ngay
           </Link>

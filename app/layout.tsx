@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi" className="scroll-smooth">
-      <body className={`${inter.variable} bg-[#F5F5F7] font-inter text-[#1D1D1F] antialiased`}>
+      <body className={`${inter.variable} bg-[#FFFFFF] font-inter text-[#1D1D1F] antialiased`}>
         <div className="flex min-h-screen flex-col overflow-x-clip">
           {children}
         </div>

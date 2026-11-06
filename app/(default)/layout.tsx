@@ -22,7 +22,7 @@ export default function DefaultLayout({
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#F5F5F7] text-[#1D1D1F]">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-[#1D1D1F]">
       <Header />
       <main className="grow">{children}</main>
       <Footer />
