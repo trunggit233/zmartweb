@@ -17,6 +17,7 @@
 - [X] Sửa lại css Brand trust.
 - [X] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
 - [X] Dựng UI chi tiết cho các section trang chủ.
-- [ ] Dựng trang contact, bóc tách cấu trúc, from gọn gàng.
+
+- [ ] Sửa nội dung, bố cục, sửa code thừa, căn chỉnh cho phù hợp với trang contact.
 - [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
 
