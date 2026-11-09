@@ -17,13 +17,27 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm">Điều hướng</h4>
             <ul className="mt-4 space-y-2 text-sm text-gray-600">
-              {mainNav.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="hover:text-black">
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+              {mainNav.map((item) => {
+                if (item.items) {
+                  return item.items.map((subItem) => (
+                    <li key={subItem.href}>
+                      <Link href={subItem.href} className="hover:text-black">
+                        {subItem.title}
+                      </Link>
+                    </li>
+                  ));
+                }
+
+                if (!item.href) return null;
+
+                return (
+                  <li key={item.href}>
+                    <Link href={item.href} className="hover:text-black">
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>
@@ -42,4 +56,3 @@ export default function Footer() {
     </footer>
   );
 }
-

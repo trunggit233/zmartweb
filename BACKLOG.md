@@ -12,11 +12,12 @@
   - Thiết lập `types/` và `lib/utils.ts`.
   - Khởi tạo khung các route đa trang: `/`, `/about`, `/services`, `/contact`, `/signin`, `/api/booking`.
 - [x] Kiểm tra TypeCheck (`tsc --noEmit`) đạt 100% không lỗi.
-
-## Kế hoạch tiếp theo
 - [X] Sửa lại css Brand trust.
 - [X] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
 - [X] Dựng UI chi tiết cho các section trang chủ.
+
+## Kế hoạch tiếp theo
+- [ ] Bỏ href solution thay vào đó chỉ sử dụng các href khi hover hiện ra.
 
 - [ ] Sửa nội dung, bố cục, sửa code thừa, căn chỉnh cho phù hợp với trang contact.
 - [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.

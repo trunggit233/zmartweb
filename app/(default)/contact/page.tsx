@@ -1,4 +1,4 @@
-import ContactSection from "@/components/pages/contact/contact-section";
+import ContactSection from "@/components/pages/contact/contact-page";
 
 export const metadata = {
   title: "Liên hệ",

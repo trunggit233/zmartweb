@@ -1,7 +1,15 @@
-export interface NavItem {
+export interface SubNavItem {
   title: string;
+  description?: string;
   href: string;
   external?: boolean;
+}
+
+export interface NavItem {
+  title: string;
+  href?: string;
+  external?: boolean;
+  items?: SubNavItem[];
 }
 
 export interface SiteConfig {
@@ -12,4 +20,3 @@ export interface SiteConfig {
   email: string;
   address: string;
 }
-
