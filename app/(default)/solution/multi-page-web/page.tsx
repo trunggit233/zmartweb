@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Thiết kế Website Nhiều Trang",
-  description: "Dịch vụ may đo website doanh nghiệp nhiều trang, chuẩn nhận diện thương hiệu và tối ưu SEO từ TvT Simple.",
+  description: "Dịch vụ may đo website doanh nghiệp nhiều trang, chuẩn nhận diện thương hiệu và tối ưu SEO từ ZmartWeb.",
 };
 
 export default function MultiPageWebSolution() {

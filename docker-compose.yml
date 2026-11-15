@@ -1,0 +1,33 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zmartweb-app
+    restart: always
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "3000"
+    networks:
+      - zmartweb-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: zmartweb-nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      # Mở khi cài SSL Let's Encrypt trên VPS:
+      # - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - app
+    networks:
+      - zmartweb-network
+
+networks:
+  zmartweb-network:
+    driver: bridge

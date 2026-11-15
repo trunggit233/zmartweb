@@ -15,10 +15,17 @@
 - [X] Sửa lại css Brand trust.
 - [X] Fix lỗi cuộn ngang của our-project, sửa lại tiểu tiết bo góc, content, ảnh, căn chữ center...
 - [X] Dựng UI chi tiết cho các section trang chủ.
+- [X] Bỏ href solution thay vào đó chỉ sử dụng các href khi hover hiện ra.
+- [X] Sửa nội dung, bố cục, sửa code thừa, căn chỉnh cho phù hợp với trang contact.
 
 ## Kế hoạch tiếp theo
-- [ ] Bỏ href solution thay vào đó chỉ sử dụng các href khi hover hiện ra.
-
-- [ ] Sửa nội dung, bố cục, sửa code thừa, căn chỉnh cho phù hợp với trang contact.
 - [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
+- [ ] Xây dựng trang landing page section.
+  - Hoàn thiện các section trong trang 
+  - Nêu ra bảng giá
+  - Giới thiệu dịch vụ
+  - CTA đến form
+  - 
+- [ ] Xây dựng trang mutil page section.
+- [ ] .
 

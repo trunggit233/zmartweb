@@ -181,7 +181,7 @@ export default function ContactSection() {
                     Gửi yêu cầu thành công!
                   </h4>
                   <p className="mt-2 text-sm text-emerald-700">
-                    Cảm ơn bạn đã liên hệ. Đội ngũ TvT Simple sẽ gọi điện hoặc phản hồi qua email cho bạn trong thời gian sớm nhất.
+                    Cảm ơn bạn đã liên hệ. Đội ngũ ZmartWeb sẽ gọi điện hoặc phản hồi qua email cho bạn trong thời gian sớm nhất.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}

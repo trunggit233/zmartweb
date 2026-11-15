@@ -107,7 +107,7 @@ export default function BlogSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
         <div data-aos="fade-up" className="max-w-2xl mx-auto text-center px-4">
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#1D1D1F] sm:text-4xl md:text-5xl">
-            Blog TvT Simple
+            Blog ZmartWeb
           </h2>
           <p className="mt-3 text-base text-gray-800 sm:text-lg">
             Cập nhật những xu hướng thiết kế, kiến thức công nghệ và giải pháp tối ưu chuyển đổi số cho doanh nghiệp.

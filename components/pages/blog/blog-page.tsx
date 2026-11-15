@@ -122,7 +122,7 @@ const allPosts: BlogPost[] = [
     date: "27/09/2026",
     readTime: "5 phút đọc",
     excerpt:
-      "Khám phá các bước nghiên cứu người dùng, thiết kế giao diện mẫu và lập trình chuẩn chỉ tại TvT Simple.",
+      "Khám phá các bước nghiên cứu người dùng, thiết kế giao diện mẫu và lập trình chuẩn chỉ tại ZmartWeb.",
     image: "/images/img-2-w.jpg",
     slug: "quy-trinh-thiet-ke-website-wireframe",
   },

@@ -13,7 +13,7 @@ const faqs: FaqItem[] = [
   {
     question: "Thời gian hoàn thành một website theo yêu cầu là bao lâu?",
     answer:
-      "Thông thường dự án sẽ hoàn thiện từ 10 đến 20 ngày làm việc tùy thuộc vào quy mô và độ phức tạp của các tính năng nghiệp vụ. TvT Simple cam kết tiến độ minh bạch theo từng giai đoạn phát triển.",
+      "Thông thường dự án sẽ hoàn thiện từ 10 đến 20 ngày làm việc tùy thuộc vào quy mô và độ phức tạp của các tính năng nghiệp vụ. ZmartWeb cam kết tiến độ minh bạch theo từng giai đoạn phát triển.",
   },
   {
     question: "Chi phí thiết kế website may đo được tính như thế nào?",
@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     question: "Website có được chuẩn SEO và tối ưu trên điện thoại không?",
     answer:
-      "100% website do TvT Simple xây dựng đều được tối ưu cấu trúc chuẩn SEO kỹ thuật, tốc độ tải trang nhanh theo chuẩn Google Core Web Vitals và hiển thị chuẩn mực trên mọi màn hình di động, tablet, máy tính.",
+      "100% website do ZmartWeb xây dựng đều được tối ưu cấu trúc chuẩn SEO kỹ thuật, tốc độ tải trang nhanh theo chuẩn Google Core Web Vitals và hiển thị chuẩn mực trên mọi màn hình di động, tablet, máy tính.",
   },
   {
     question: "Sau khi bàn giao, tôi có thể tự quản trị và cập nhật nội dung không?",
@@ -33,7 +33,7 @@ const faqs: FaqItem[] = [
   {
     question: "Chính sách bảo hành và hỗ trợ sau khi website đi vào hoạt động ra sao?",
     answer:
-      "TvT Simple bảo hành kỹ thuật trọn đời đối với các lỗi phát sinh từ mã nguồn. Đồng thời chúng tôi luôn sẵn sàng hỗ trợ kỹ thuật, kiểm tra định kỳ và sao lưu dữ liệu an toàn.",
+      "ZmartWeb bảo hành kỹ thuật trọn đời đối với các lỗi phát sinh từ mã nguồn. Đồng thời chúng tôi luôn sẵn sàng hỗ trợ kỹ thuật, kiểm tra định kỳ và sao lưu dữ liệu an toàn.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function FaqsSection() {
             Câu hỏi thường gặp
           </h2>
           <p className="mt-3 text-base text-gray-600 sm:text-lg">
-            Tổng hợp các câu hỏi phổ biến nhất về quy trình triển khai, chi phí và chế độ bảo hành tại TvT Simple.
+            Tổng hợp các câu hỏi phổ biến nhất về quy trình triển khai, chi phí và chế độ bảo hành tại ZmartWeb.
           </p>
         </div>
 

@@ -13,7 +13,7 @@ export default function CtaActionSection() {
           <div className="relative z-10 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
               <h2 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Sẵn sàng nâng tầm thương hiệu cùng TvT Simple?
+                Sẵn sàng nâng tầm thương hiệu cùng ZmartWeb?
               </h2>
               <p className="mt-3 text-base text-gray-300 sm:text-lg">
                 Đồng hành cùng bạn xây dựng website may đo đẳng cấp, tối ưu trải nghiệm và thúc đẩy tăng trưởng doanh số bền vững.

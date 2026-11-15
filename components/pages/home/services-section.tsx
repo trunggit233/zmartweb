@@ -42,10 +42,10 @@ export default function ServicesSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
         <div data-aos="fade-up" className="max-w-3xl mx-auto text-center px-4">
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1D1D1F] sm:text-4xl md:text-5xl">
-            Dịch vụ của TvT Simple
+            Dịch vụ của ZmartWeb
           </h2>
           <p className="mt-4 text-base text-gray-600 sm:text-lg">
-            TvT Simple cung cấp dịch vụ thiết kế, phát triển và vận hành website & hệ thống nghiệp vụ may đo theo yêu cầu khách hàng.
+            ZmartWeb cung cấp dịch vụ thiết kế, phát triển và vận hành website & hệ thống nghiệp vụ may đo theo yêu cầu khách hàng.
           </p>
         </div>
 
