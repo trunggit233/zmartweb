@@ -27,11 +27,14 @@
   - [x] Dựng Kho mẫu giao diện thực chiến (`template-showcase-section.tsx`) dạng hàng ngang lướt gọn.
   - [ ] Giới thiệu dịch vụ & tính năng nổi bật.
   - [x] CTA đến form đặt lịch (`cta-section.tsx`) đồng bộ thiết kế trang chủ.
-- [ ] Xây dựng trang multi page section.
-  - [x] Khởi tạo khung banner Hero (`hero-section.tsx`).
-  - [ ] .
-  - [ ] .
+- [ ] Xây dựng trang multi page section (Giải pháp Website Nhiều Trang / Doanh Nghiệp).
+  - [x] Khởi tạo khung banner Hero Monochrome chuẩn Apple/Vercel (`hero-section.tsx`).
+  - [x] Cấu trúc Kiến trúc Website Doanh nghiệp Chuẩn (`site-architecture-section.tsx` - Sơ đồ trang: Home, About, Services, Case Studies, Blog, Contact).
+  - [x] Lợi thế cốt lõi của Website Đa Trang (`advantages-section.tsx` - Luận điểm Editorial: Thống trị SEO tự nhiên, Tín nhiệm B2B, CMS tự chủ, Mở rộng vô hạn).
+  - [x] Kho Mẫu Website Doanh Nghiệp Thực Chiến (`showcase-section.tsx` - Slider hàng ngang lướt gọn gàng).
+  - [ ] Bảng Giá May Đo Website Doanh Nghiệp 3 Gói (`price-section.tsx` - Tiêu chuẩn, Tăng trưởng, Doanh nghiệp lớn).
+  - [ ] Section CTA Bắt Đầu Dự Án (`cta-section.tsx` - Đồng bộ nhận diện, dẫn về form đặt lịch & hotline).
 
 ## Đang hoạt động nhưng sẽ cải thiện sau khi nó đã ổn ưu ( tiên mức độ 2 ).
-  - [ ] Sửa lại hero-section của mutil-web nó đang thừa hiệu ứng động cũng như lên phương án sửa đổi.
-  - [ ] .
+  - [ ] Sửa lại hero-section của mutil-page nó đang thừa hiệu ứng động cũng như lên phương án sửa đổi.
+  - [ ] Thêm nút chat zalo, message nhanh.
