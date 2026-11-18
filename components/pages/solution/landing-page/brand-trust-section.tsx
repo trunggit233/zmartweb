@@ -65,7 +65,7 @@ export default function BrandTrustLandingPageSection() {
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Cột Trái: Ảnh Mockup trực quan + Thẻ số liệu nổi bật */}
           <div data-aos="fade-right" className="relative lg:col-span-6">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-gray-200/80 bg-gray-50 shadow-xl">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-gray-200/80 bg-gray-50 shadow-xl">
               <Image
                 src="/images/working.png"
                 alt="Thiết kế Landing Page tạo dựng niềm tin thương hiệu"
@@ -88,7 +88,7 @@ export default function BrandTrustLandingPageSection() {
             {TRUST_PILLARS.map((pillar) => (
               <div
                 key={pillar.id}
-                className="group rounded-2xl border border-gray-200/80 bg-white p-5.5 sm:p-6 shadow-2xs transition-all duration-200 hover:border-gray-300 hover:shadow-md"
+                className="group rounded-sm border border-gray-200/80 bg-white p-5.5 sm:p-6 shadow-2xs transition-all duration-200 hover:border-gray-300 hover:shadow-md"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FAF5EF] font-bold text-sm text-[#1D1D1F] transition-colors group-hover:bg-[#1D1D1F] group-hover:text-white">
