@@ -7,6 +7,9 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
+    env_file:
+      - path: .env
+        required: false
     expose:
       - "3000"
     networks:

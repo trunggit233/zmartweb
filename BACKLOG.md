@@ -18,14 +18,20 @@
 - [X] Bỏ href solution thay vào đó chỉ sử dụng các href khi hover hiện ra.
 - [X] Sửa nội dung, bố cục, sửa code thừa, căn chỉnh cho phù hợp với trang contact.
 
-## Kế hoạch tiếp theo
-- [ ] Hoàn thiện xử lý form Đặt lịch & gửi mail/API.
+## Kế hoạch tiếp theo ưu ( tiên mức độ 1 )
+- [x] Hoàn thiện xử lý form Đặt lịch chi tiết & API chuẩn (Validation, Rate limiting, Honeypot, Logging).
 - [ ] Xây dựng trang landing page section.
-  - Hoàn thiện các section trong trang 
-  - Nêu ra bảng giá
-  - Giới thiệu dịch vụ
-  - CTA đến form
-  - 
-- [ ] Xây dựng trang mutil page section.
-- [ ] .
+  - [x] Nêu ra bảng giá (`price-section.tsx`) 3 gói dịch vụ chuẩn UI.
+  - [x] Dựng Brand Trust & Niềm tin chuyển đổi (`brand-trust-section.tsx`).
+  - [x] Dựng Luận điểm vì sao cần Website (`why-website-section.tsx`) dạng editorial chuyên sâu.
+  - [x] Dựng Kho mẫu giao diện thực chiến (`template-showcase-section.tsx`) dạng hàng ngang lướt gọn.
+  - [ ] Giới thiệu dịch vụ & tính năng nổi bật.
+  - [x] CTA đến form đặt lịch (`cta-section.tsx`) đồng bộ thiết kế trang chủ.
+- [ ] Xây dựng trang multi page section.
+  - [x] Khởi tạo khung banner Hero (`hero-section.tsx`).
+  - [ ] .
+  - [ ] .
 
+## Đang hoạt động nhưng sẽ cải thiện sau khi nó đã ổn ưu ( tiên mức độ 2 ).
+  - [ ] Sửa lại hero-section của mutil-web nó đang thừa hiệu ứng động cũng như lên phương án sửa đổi.
+  - [ ] .

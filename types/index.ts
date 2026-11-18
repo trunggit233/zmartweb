@@ -20,3 +20,5 @@ export interface SiteConfig {
   email: string;
   address: string;
 }
+
+export * from "./booking";

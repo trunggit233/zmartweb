@@ -1,41 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { siteConfig } from "@/config/site";
-import BlogSection from "@/components/pages/home/blog-section";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from "lucide-react";
-import Image from "next/image";
-
+import BookingForm from "@/components/ui/booking-form";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    service: "Website Doanh Nghiệp",
-    message: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      await fetch("/api/booking", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      setIsSubmitted(true);
-    } catch {
-      setIsSubmitted(true);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div>
       <div className="relative flex min-h-[220px] items-center justify-center overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-[#FAF5EF]/60 to-white py-16 sm:min-h-[260px] md:py-20">
@@ -99,17 +68,28 @@ export default function ContactSection() {
             data-aos="fade-up"
             className="text-3xl font-extrabold tracking-tight text-[#1D1D1F] sm:text-4xl md:text-5xl"
           >
-            Thông tin liên hệ
+            Liên hệ & Đặt lịch tư vấn
           </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="mt-3 text-base text-gray-600 sm:text-lg"
+          >
+            Chúng tôi sẽ giải đáp thắc mắc và tư vấn giải pháp tối ưu cho bạn.
+          </p>
         </div>
       </div>
 
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+          {/* Cột thông tin liên hệ trực tiếp */}
           <div data-aos="fade-right" className="lg:col-span-5">
             <h2 className="text-2xl font-bold tracking-tight text-[#1D1D1F] sm:text-3xl">
               Thông tin liên hệ trực tiếp
             </h2>
+            <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+              Bạn có thể đến trực tiếp văn phòng hoặc kết nối nhanh qua Hotline / Zalo để được hỗ trợ tức thì.
+            </p>
 
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="flex items-start gap-4">
@@ -168,92 +148,9 @@ export default function ContactSection() {
             </div>
           </div>
 
+          {/* Cột Form đặt lịch chi tiết */}
           <div data-aos="fade-left" className="lg:col-span-7">
-            <div className="rounded-sm border border-gray-200/80 bg-white p-6 shadow-sm sm:p-10">
-              <h3 className="text-xl font-bold text-[#1D1D1F] sm:text-2xl">
-                Liên hệ
-              </h3>
-
-              {isSubmitted ? (
-                <div className="mt-8 rounded-2xl bg-emerald-50 border border-emerald-200/80 p-8 text-center">
-                  <CheckCircle2 className="mx-auto h-12 w-12 text-emerald-600" />
-                  <h4 className="mt-3 text-lg font-bold text-emerald-900">
-                    Gửi yêu cầu thành công!
-                  </h4>
-                  <p className="mt-2 text-sm text-emerald-700">
-                    Cảm ơn bạn đã liên hệ. Đội ngũ ZmartWeb sẽ gọi điện hoặc phản hồi qua email cho bạn trong thời gian sớm nhất.
-                  </p>
-                  <button
-                    onClick={() => setIsSubmitted(false)}
-                    className="mt-6 rounded-full bg-emerald-600 px-6 py-2.5 text-xs font-semibold text-white transition hover:bg-emerald-700"
-                  >
-                    Gửi yêu cầu khác
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-                  <div>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Họ và tên"
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                      className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-4 py-3 text-sm text-[#1D1D1F] transition focus:border-[#1D1D1F] focus:bg-white focus:outline-none"
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                    <div>
-                      <input
-                        type="tel"
-                        required
-                        placeholder="Số điện thoại"
-                        value={formData.phone}
-                        onChange={(e) =>
-                          setFormData({ ...formData, phone: e.target.value })
-                        }
-                        className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-4 py-3 text-sm text-[#1D1D1F] transition focus:border-[#1D1D1F] focus:bg-white focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        value={formData.email}
-                        onChange={(e) =>
-                          setFormData({ ...formData, email: e.target.value })
-                        }
-                        className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-4 py-3 text-sm text-[#1D1D1F] transition focus:border-[#1D1D1F] focus:bg-white focus:outline-none"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <textarea
-                      rows={4}
-                      placeholder="Nội dung tin nhắn / Yêu cầu"
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
-                      }
-                      className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-4 py-3 text-sm text-[#1D1D1F] transition focus:border-[#1D1D1F] focus:bg-white focus:outline-none"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#1D1D1F] px-8 py-4 text-sm font-bold text-white transition hover:bg-black disabled:opacity-50"
-                  >
-                    {isSubmitting ? "Đang gửi..." : "Gửi thông tin tư vấn"}
-                    <Send className="h-4 w-4" />
-                  </button>
-                </form>
-              )}
-            </div>
+            <BookingForm />
           </div>
         </div>
       </div>
