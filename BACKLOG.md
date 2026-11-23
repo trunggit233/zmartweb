@@ -32,7 +32,7 @@
   - [x] Cấu trúc Kiến trúc Website Doanh nghiệp Chuẩn (`site-architecture-section.tsx` - Sơ đồ trang: Home, About, Services, Case Studies, Blog, Contact).
   - [x] Lợi thế cốt lõi của Website Đa Trang (`advantages-section.tsx` - Luận điểm Editorial: Thống trị SEO tự nhiên, Tín nhiệm B2B, CMS tự chủ, Mở rộng vô hạn).
   - [x] Kho Mẫu Website Doanh Nghiệp Thực Chiến (`showcase-section.tsx` - Slider hàng ngang lướt gọn gàng).
-  - [ ] Bảng Giá May Đo Website Doanh Nghiệp 3 Gói (`price-section.tsx` - Tiêu chuẩn, Tăng trưởng, Doanh nghiệp lớn).
+  - [x] Bảng Giá May Đo Website Doanh Nghiệp 3 Gói (`price-section.tsx` - Tiêu chuẩn, Tăng trưởng, Doanh nghiệp lớn).
   - [ ] Section CTA Bắt Đầu Dự Án (`cta-section.tsx` - Đồng bộ nhận diện, dẫn về form đặt lịch & hotline).
 
 ## Đang hoạt động nhưng sẽ cải thiện sau khi nó đã ổn ưu ( tiên mức độ 2 ).
